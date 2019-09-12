@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nikita Titov</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                <label class="btn-menu" for="hmt">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </label>
+                <ul class="hidden-menu">
+                    <li class="logo"><a href=""><p><b><i class="fas fa-chess-queen"></i></b><b>ToDo</b></p></a></li>
+                    <li class="home"><a href=""><i class="fas fa-home"></i>Home</a></li>
+                    <li class="settings"><i class="fas fa-cogs"></i><a href="">Settings</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+            </div>
+        <div class="col-md-6">
+            <ul class="list-line">
+                <li><span><a href=""><i class="fas fa-ambulance"></i></a></span></li>
+                <li><span><a href=""><i class="fab fa-accusoft"></i></a></span></li>
+                <li><span class="buttom_1"> <button id="button_add"/><i class="fas fa-plus"></i>Add
+                    ToDo</button></span></li>
+                <li><span class="buttom_2"> <button class="button_name"/>dfd</span></span></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</header>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form_text" id="forma">
+                <div class="form_group">
+                    <button type="button" class="close" id="forma_close" data-dismiss="modal" aria-hidden="true"> <i
+                            class="fa fa-times-circle fa-2x"></i></button>
+                    <label class="col-sm-2 control-label" for="input-review" style="font-size:28px;"> <b>A new
+                    Note</b></label>
+                    <div class="col-sm-12">
+                        <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                    </div>
+                    <button type="button"  id="close_note" data-dismiss="modal" aria-hidden="true">Close
+                    </button>
+                    <button type="button"  id="add_note" data-dismiss="modal" aria-hidden="true">Add
+                    </button>
+                    <span class="priority">
+                    <input type="radio" id="important_note"
+                           name="name" value="important">
+                    <label for="important_note" style="margin-right: 5px">Important</label>
+                        <input type="radio" id="medium_note"
+                               name="name" value="medium">
+                    <label for="medium_note" style="margin-right: 5px">Medium</label>
+                        <input type="radio" id="low_note"
+                               name="name" value="low">
+                    <label for="low_note">Low</label>
+                    </span>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <div class="to_do">
+         <div class="row">
+            <div class="col-md-12">
+                <span class="text_1"><b><h1>To Do</h1></b></span>
+                <div id="to_do_note">
+                    <div class="to_do_text"><div class="row">
+                        <div class="col-sm-12">
+                            <div class="text_out">
+                            <div class="logo_priority"><p>L</p></div>
+                                <div class="name_note">fdsfdsdsdsf
+                            <div class="text_note"> dsfdfds</div>
+                                    <button type="button"  id="delete" data-dismiss="modal" aria-hidden="true">
+                                        <i class="fas fa-trash-alt"></i></button>
+                                    <button type="button"  id="edit" data-dismiss="modal" aria-hidden="true">
+                                        <i class="fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    </div>
+    <div class="complet">
+        <div class="row">
+            <div class="col-md-12">
+
+                <span class="text_1"><b><h1>Completed</h1></b></span>
+
+                <p> dffdfd</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="important">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="text_1"><b><h1>Important</h1></b></span>
+                <div class="important_note" id="important_note_1">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="medium">
+        <div class="row">
+            <div class="col-md-12">
+
+                <span class="text_1"><b><h1>Medium</h1></b></span>
+                <div class="medium_note">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="low_priority">
+        <div class="row">
+            <div class="col-md-12">
+
+                <span class="text_1"><b><h1>Low Priority</h1></b></span>
+
+                <div class="low_note">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+ fdfdfdfd
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+
+<script src="js/first.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery_note.js"></script>
+
+
+</body>
+</html>
